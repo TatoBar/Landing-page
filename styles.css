@@ -191,3 +191,6 @@ button {
   display: flex;
   justify-content: center;
 }
+.body {
+  flex: 1;
+}
