@@ -26,7 +26,8 @@ button {
   font-weight: 900;
 }
 .hero-text,
-.logo {
+.logo,
+.action-text {
   color: #f9faf8;
 }
 .logo {
@@ -35,7 +36,8 @@ button {
 .hero-subtext,
 a,
 button,
-.footer {
+.footer,
+.action-subtext {
   color: #e5e7eb;
 }
 .hero-subtext,
@@ -43,7 +45,7 @@ a {
   font-size: 18px;
 }
 button,
-.action-section {
+.action {
   background: #3882f6;
   border: none;
   border-radius: 5px;
@@ -93,6 +95,12 @@ ul {
   width: 80%;
   height: 100%;
 }
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: start;
+}
 .hero-img {
   flex-basis: 100%;
   text-align: end;
@@ -120,15 +128,20 @@ ul {
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  padding: 50px 15px;
+  padding: 25px 25px 50px 25px;
+  gap: 15px;
 }
 .card-img {
   flex-basis: 100%;
 }
 .card-img img {
   width: 100%;
-  max-width: 175px;
+  max-width: 200px;
+}
+
+.card-subtext {
+  font-style: italic;
+  max-width: 200px;
 }
 
 /* quote section styling */
@@ -148,4 +161,33 @@ ul {
 .quote-arthur {
   font-weight: bold;
   align-self: end;
+}
+
+/* action section styling */
+.action-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+.action {
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  width: 70%;
+  max-width: 600px;
+  gap: 50px;
+  border-radius: 10px;
+}
+
+button {
+  flex-shrink: 0;
+}
+
+/* footer styling */
+.footer {
+  display: flex;
+  justify-content: center;
 }
