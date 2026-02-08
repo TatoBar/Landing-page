@@ -2,6 +2,8 @@ body {
   font-family: Roboto, sans-serif;
   min-height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -68,8 +70,9 @@ button,
 .header {
   display: flex;
   flex-direction: column;
-  height: 400px;
   align-items: center;
+  justify-content: center;
+  height: 400px;
 }
 
 .header-links {
@@ -83,22 +86,66 @@ ul {
   gap: 18px;
 }
 
-/* Hero section styling */
-.img-section {
-  max-width: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: gray;
-  color: #e5e7eb;
-  font-size: 18px;
-  flex: 1 1 auto;
-}
-
 .top-section {
   display: flex;
   align-items: center;
   gap: 50px;
   width: 80%;
   height: 100%;
+}
+.hero-img {
+  flex-basis: 100%;
+  text-align: end;
+}
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+/* Information section styling */
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding-top: 25px;
+}
+
+.info-cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 15px;
+}
+.card-img {
+  flex-basis: 100%;
+}
+.card-img img {
+  width: 100%;
+  max-width: 175px;
+}
+
+/* quote section styling */
+.quote-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.quote-arthur {
+  font-weight: bold;
+  align-self: end;
 }
